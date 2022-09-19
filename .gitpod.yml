@@ -1,0 +1,4 @@
+tasks:
+  - init: export API_URL=$(gp url 3000) && docker-compose --profile dev build
+    command: |
+      docker-compose --profile dev up -d
